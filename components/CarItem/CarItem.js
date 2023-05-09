@@ -3,9 +3,9 @@ import { View, Text, ImageBackground } from 'react-native'
 import Button from '../StyledButton/Button'
 import styles from './styles'
 
-const Cars = (props) => {
+const CarItem = (props) => {
 
-  const { name, tagline, taglineCTA, image } = props;
+  const { name, tagline, taglineCTA, image } = props.car;
 
 
   return (
@@ -19,6 +19,7 @@ const Cars = (props) => {
           <Text style={styles.title}>{name}</Text>
           <Text style={styles.subtitle}>
             {tagline}
+            {' '}
             <Text style={styles.subtitleCTA}>
               {taglineCTA}
             </Text>
@@ -47,4 +48,4 @@ const Cars = (props) => {
   )
 }
 
-export default Cars
+export default CarItem
