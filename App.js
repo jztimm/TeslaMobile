@@ -5,7 +5,13 @@ import Cars from './components/CarItem/Cars';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Cars />
+      <Cars
+        name={"Model 3"}
+        tagline={"Order Online for "}
+        taglineCTA={"Touchless Delivery"}
+        image={require('./assets/images/Model3.jpeg')}
+      />
+      
       <StatusBar style="auto" />
     </View>
   );
